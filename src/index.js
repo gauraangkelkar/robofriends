@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
-import RoboApp from './RoboApp';
+import RoboApp from './containers/RoboApp';
 import 'tachyons';
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RoboApp className=""/>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
